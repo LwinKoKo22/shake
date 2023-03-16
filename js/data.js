@@ -27,6 +27,6 @@ window.onload = function() {
 add = function(){ 
     while( i < image_array.length){
         document.getElementById('image').src = image_array[i];
-        i++
     }
+    i++
 }
