@@ -37,14 +37,12 @@ let image_array = [
     "https://media.istockphoto.com/id/620951116/photo/panoramic-view-of-colorful-sunrise-in-mountains.jpg?s=170667a&w=0&k=20&c=rLaUodgwS-x2r4TntvcqYXS3y328-6KbcsWfcdv6d-s=",
     "https://media.istockphoto.com/id/1160139387/photo/early-morning-in-a-mountains.jpg?s=170667a&w=0&k=20&c=w9Egdm975NGWuwad9BALAkzj-rQDV15elospowj3tfM="
 ];
-let i = 0;
-let data;
-while( i < image_array.length ){
-    data = i ;
-    i++;
-}
+var i = 0;
 add = function(){ 
-    document.getElementById('image').src = image_array[data];
+    while( i < image_array.length ){
+        document.getElementById('image').src = image_array[i];
+}
+   return i++;
 }
 </script>
 </body>
