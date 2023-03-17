@@ -6,11 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
-<div id="image-container">
-    <img src="images/chicken.jpg" alt="image" id="image">
+<div class="container">
+    <div class="row">
+        <div class="col-xl-6 col-12">
+            <div class="text-center my-4">
+                <h3 class="text-muted">Please shake the phone to see the magic.😉</h6>
+            </div>
+            <div class="image-container">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="images/chicken.jpg" id="image">
+                    </div>
+                </div>
+            </div>
+            <h5 class="text-center text-danger mt-2 animate__animated animate__shakeX">Shake it!</h5>
+        </div>
+    </div>
 </div>
+
+<script src="js/bootstrap.min.js"></script>
 <script src="js/shake.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/data.js"></script>
