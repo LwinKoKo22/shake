@@ -9,8 +9,21 @@
 </head>
 <body>
 <p id="para"></p>
-<script src="js/shake.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/data.js"></script>
+
+<script>
+    if (window.DeviceMotionEvent) {
+  // Add an event listener to the window object for the DeviceMotion event
+  window.addEventListener('devicemotion', function(event) {
+    // Get the accelerometer data from the event object
+    var acceleration = event.accelerationIncludingGravity;
+
+    // Log the accelerometer data to the console
+    document.getElementById('para').innerHTML = 'Accelerometer data:', acceleration.x, acceleration.y, acceleration.z;
+  });
+} else {
+  // DeviceMotion is not supported in the browser
+  document.getElementById('para').innerHTML = 'DeviceMotion is not supported';
+}
+</script>
 </body>
 </html>
