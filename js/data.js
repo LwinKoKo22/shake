@@ -21,7 +21,7 @@ function shakeEventReceived(event) {
     // Define the shakeEventDidOccur function
     function shakeEventDidOccur() {
       // Do something in response to the shake event
-      document.getElementById('para').innerHTML = "I'm testing";
+      document.getElementById('para').innerHTML = "I'm still trying now";
     }
   }
 }
