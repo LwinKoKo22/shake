@@ -21,8 +21,12 @@ function shakeEventReceived(event) {
     // Define the shakeEventDidOccur function
     function shakeEventDidOccur() {
       // Do something in response to the shake event
-      document.getElementById('para').innerHTML = "I'm still trying now";
+      add();
     }
+    $('span').bind( "touchstart", function(e){add();} );
+    add = function(){
+      document.getElementById('para').innerHTML = "I'm disappoinment something";
+  }
   }
 }
 }
